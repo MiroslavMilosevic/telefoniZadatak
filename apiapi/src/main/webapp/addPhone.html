@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="./style/addPhone2.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<button id="logOutButton">Log Out</button>
+<div id='big-wrapper'>
+
+
+
+<div id="app-add-phone">
+                   <h1>Add Phone</h1>
+              <ul class="add-phone-ul">
+              <li>
+        <input type='text' id="naslov" placeholder="naslov">
+        </li>
+        <li>
+		<select id="marka">
+		<option value="">Proizvodjac</option>
+			<option value="samsung">Samsung</option>
+			<option value="Iphone">Iphone</option>
+			<option value="huawei">Huawei</option>
+			<option value="nokia">Nokia</option>
+			<option value="lenovo">Lenovo</option>
+			<option value="xiaomi">Xiaomi</option>
+		</select>
+		</li>
+		<li>
+		<input type='text' id="model" placeholder="model">
+		</li>
+		<li>
+        <input type="number" id="cena" name="cena" min="50" max="2000" value="500">
+          		<label for="cena">Cena</label>
+          </li>
+          <li>
+        <select id="procesor">
+		<option value="">Procesor</option>
+			<option value="Apple A14 Bionic">Apple A14 Bionic</option>
+			<option value="Snapdragon 888">Snapdragon 888</option>
+			<option value="Exynos 2100">Exynos 2100</option>
+			<option value="Apple A13 Bionic">Apple A13 Bionic</option>
+			<option value="Kirin 9000">Kirin 9000</option>
+			<option value="Dimensity 1000L">Dimensity 1000L</option>
+		    <option value="Snapdragon 768G">Snapdragon 768G</option>
+			<option value="Apple A12 Bionic">Apple A12 Bionic</option>
+			<option value="Dimensity 1000+">Dimensity 1000+</option>
+		</select>
+		</li>
+		<li>
+		   <select id="os">
+		<option value="">OS</option>
+			<option value="Android">Android</option>
+			<option value="IOS">IOS</option>
+			<option value="Samsung">Samsung</option>
+			<option value="Windows">Windows</option>
+			<option value="KaiOS">KaiOS</option>  
+		</select>
+		</li>
+		<li>	
+		  <input type="number" id="ram" name="ram" min="1" max="32" value="2">
+		  	<label for="ram">Ram</label>
+          </li>
+          <li>	
+          	  <input type="number" id="rom" name="rom" min="16" max="1024" value="32">
+          	  	<label for="rom">Rom</label>
+		</li>
+		<li>
+		<div id='check-box-div'>
+	 	<input type="checkbox" id="GSM" name="cek" value="GSM">
+       <label for="GSM">GSM</label>
+        <input type="checkbox" id="3G" name="cek" value="3G">
+       <label for="vehicle2">3G</label>
+     <input type="checkbox" id="4G" name="cek" value="4G">
+       <label for="vehicle3">4G</label>
+		    <input type="checkbox" id="LTE" name="cek" value="LTE">
+       <label for="vehicle3">LTE</label>
+       </div>
+       </li>
+       <li>
+        
+       		    <input type="file" id="file" name="file" accept="image/*" placeholder="slika">
+       		    
+       		    </li>
+       		    <li>
+       		    <button id="buttonDodaj" style="background-color: lightblue">Dodaj telefon</button>
+       		    </li>
+       		    </ul>
+
+	</div>
+	<br>
+	     <h2 id="header-izbrisi">Izbrisi telefone</h2>
+	<div id="delete-app">
+ 	
+ 	
+ 	
+	</div>
+	</div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+
+
+</body>
+<script src="./scriptFiles/none.js"></script>
+<script type="module" src="./addPhone.js"></script>
+</html>
